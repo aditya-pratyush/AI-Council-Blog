@@ -1,0 +1,468 @@
+/* ===================================================
+
+       Table of content
+
+       01. FONTS
+       02. MAIN STYLES
+       03. SECTION HEADING STYLES
+       04. HEADER STYLES
+       05. COPYRIGHT AREA
+       06. SCROLLUP
+       07. PRELOADER STYLES
+
+==================================================== */
+
+/*=====================
+        01. FONTS
+=======================*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,700,900');
+
+
+
+/*===========================
+      02. MAIN STYLES
+=============================*/
+.new-header{
+    background: #04091D;
+    position: relative;
+    z-index: 100;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', Sans-serif;
+    line-height: 28px;
+    margin: 0;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+ab{
+    color:aquamarine;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a, a:link, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+/* =======================
+    03. SECTION HEADING
+ =========================*/
+.section-heading {
+    margin: 0px auto 100px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 60px;
+    border-right: 1px solid rgb(18,22,38);
+    border-left: 1px solid rgb(18,22,38);
+    font-size: 40px;
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-heading .section-heading-style {
+    font-weight: 100;
+}
+
+.section-heading p {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #8c8686;
+}
+
+
+/* ============================
+    05. HEADER STYLES
+=============================== */
+#header-area {
+    overflow: hidden;
+    background-color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+
+#header-area:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(14, 22, 38, .7);
+}
+
+.header-img-bg {
+    background-image: url(../img/bg/9.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-part-two-bg {
+    background-image: url(../img/bg/2.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+#header-area .header-video-bg video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.header-top {
+    overflow: hidden;
+    padding: 15px;
+    display: none;
+}
+
+
+
+#header-area .z-index {
+    position: relative;
+    z-index: 999;
+    margin-top: 19px;
+}
+
+#header-area .header-top .z-index {
+    position: relative;
+    z-index: 5000;
+}
+
+a.nav-link {
+    font-size: 14px;
+    color: #fff !important;
+}
+
+a.nav-link.active {
+    color: #ffc107 !important;
+}
+
+.header-part-two a.nav-link.active {
+    color: #FF1D5D !important;
+}
+
+.header-part-two-gradient a.nav-link.active {
+    color: #ff8a00 !important;
+}
+
+.fix-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0E1626;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+hr.solid {
+  border-top: 1px solid #bbb;
+}
+.responsive-nav-btn {
+    border: 1px solid #fff;
+}
+
+.responsive-nav-btn span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+/*========== Logo ===========*/
+#navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: #fff !important;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+}
+
+.header-part-two-gradient 
+#navbar-header .navbar-brand {
+    color: #ff8a00 !important;
+}
+
+/* ======= Header bottom styles ==========*/
+.header-bottom .item {
+    padding-top: 100px;
+}
+
+.header-bottom h2 {
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 10%;
+    line-height: 80px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 10px;
+}
+
+.header-bottom p {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 200;
+    line-height: 28px;
+}
+
+/* ========================
+    27. COPYRIGHT AREA
+========================== */
+#footer-area {
+    overflow: hidden;
+    padding: 80px 0;
+    background-color: #080d17;
+}
+#footer-areaa {
+    overflow: hidden;
+    padding: 80px 0;
+    background-color: #04091D;
+}
+
+.copyright-area {
+    text-align: center;
+}
+
+.copyright-area h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.copyright-area p {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+}
+
+.copyright-area p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.footer-social ul li a {
+    width: 39px;
+    height: 39px;
+    display: block;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 39px;
+    margin-right: 10px;
+    transition: .4s ease;
+}
+.footer-social ul li:last-child a {
+    margin-right: 0px;
+}
+.footer-social ul li a:hover {
+    background-color: #ffc107;
+}
+
+/*=======================
+       29. SCROLLUP
+=========================*/
+#scrollUp {
+    background: #5d00dc;
+    right: 30px;
+    bottom: 0px;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    font-size: 18px;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    bottom: 30px;
+}
+
+/*===================================
+    30. RESPONSIVE NAV BUTTON STYLES
+=====================================*/
+.navbar-light .navbar-toggler {
+    border-color: rgb(255,255,255);
+    border-radius: 0px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*==================================
+    31. PRELOADER STYLES
+====================================*/
+.preloader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(14,22,38);
+    z-index: 9999;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 25% auto;
+  background-color: #fff;
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+/* INDIVIDUAL STYLING */
+
+section{ padding: 50px 0; }
+
+.p-title{ position: relative; padding-bottom: 20px; margin-bottom: 40px; }
+
+.p-title:after { content:''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ccc; }
+.p-title:before{ content:''; position: absolute; bottom: 0; left: 0; width: 80px; height: 5px; 
+    background: #F9B500; z-index: 1; }
+
+.quote-primary{ padding: 10px 20px; border-left: 2px solid #F9B500; }
+
+/* Base */
+
+.site-wrap:before {
+  -webkit-transition: .3s all ease-in-out;
+  -o-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+  background: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden; }
+
+
+.form-control {
+  height: 43px; }
+  .form-control:active, .form-control:focus {
+    border-color: #ffcd07; }
+  .form-control:hover, .form-control:active, .form-control:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+.site-section {
+  padding: 2.5em 0; }
+  @media (min-width: 768px) {
+    .site-section {
+      padding: 5em 0; } }
+  .site-section.site-section-sm {
+    padding: 4em 0; }
+
+.site-section-heading {
+  font-size: 30px;
+  color: #25262a;
+  position: relative; }
+  .site-section-heading:before {
+    content: "";
+    left: 0%;
+    top: 0;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #25262a; }
+  .site-section-heading.text-center:before {
+    content: "";
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #25262a; }
+
